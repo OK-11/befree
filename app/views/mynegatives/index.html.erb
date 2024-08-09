@@ -1,0 +1,30 @@
+<% content_for :css do %>
+    <%= stylesheet_link_tag "mynegatives_index" %>
+<% end %>
+
+<%= render "befrees/header" %>
+
+<main>
+  <h1>My Negatives</h1>
+  <% @post.each do |post| %>
+    <% if post.id==nil %>
+    <% else %>
+      <div class="div_each">
+        <p>・</p>
+        <div>
+          <%= post.content %>
+          <%= link_to "edit", edit_mynegative_path(post) , class: "link" %>
+          <%= link_to "delete", mynegative_path(post), method: :delete , class: "link" %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <% flash.each do |type, message| %>
+    <%= message %>
+  <% end %>
+  <div class="div_linkback">
+    <%= link_to "戻る" , befrees_path , class: "link_back"%>
+  </div>
+</main>
+
+<%= render "befrees/footer" %>

@@ -1,0 +1,26 @@
+<% content_for :css do %>
+    <%= stylesheet_link_tag "befrees_index" %>
+<% end %>
+
+<%= render "header" %>
+
+<main>
+  <div class="div_h1">
+    <h1>Befree</h1>
+    <p>ネガティブな気持ちとおさらばしよう！</p>
+  </div>
+  <div class="div_form">
+    <%= form_with(model: @post, url: befrees_path, local: true, class: "form") do |f| %>
+      <%= f.text_area :content , class: "textarea"%>
+      <% flash.each do |type, message| %>
+        <%= message %>
+      <% end %>
+      <div class="div_submit">
+        <%= f.submit :byebye , class: "submit"%>
+      </div>
+    <% end %>
+  </div>
+</main>
+
+<%= render "footer" %>
+

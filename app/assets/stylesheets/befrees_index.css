@@ -1,0 +1,42 @@
+
+body main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .div_h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.div_form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+}
+
+.form .div_submit {
+  width: 406px;
+  display: flex;
+  justify-content: end;
+}
+
+.form .submit {
+  width: 70px;
+  height: 30px;
+  border-radius:  5px;
+  border: 1px solid;
+}
+
+
+
+

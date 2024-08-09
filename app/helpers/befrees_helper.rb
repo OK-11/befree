@@ -1,0 +1,2 @@
+module BefreesHelper
+end

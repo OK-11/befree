@@ -1,0 +1,14 @@
+<% content_for :css do %>
+    <%= stylesheet_link_tag "mynegatives_edit" %>
+<% end %>
+
+<%= render "befrees/header" %>
+
+<main>
+  <%= form_with(model: @post_set, url: befree_path(@post_set), local: true) do |f| %>
+    <%= f.text_area :content , class: "textarea" %>
+    <%= f.submit :編集 %>
+  <% end %>
+</main>
+
+<%= render "befrees/footer" %>

@@ -1,0 +1,2 @@
+module MynegativesHelper
+end

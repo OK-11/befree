@@ -1,0 +1,37 @@
+body main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  margin-bottom: 15px;
+}
+
+main .div_each {
+  display: flex;
+  width: 500px;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.link {
+  color: black;
+  font-size: 13px;
+}
+
+.div_linkback {
+  width: 500px;
+  display: flex;
+  justify-content: end;
+}
+
+.link_back {
+  font-size: 20px;
+  color: black;
+}
+
+
